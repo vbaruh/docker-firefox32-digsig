@@ -1,4 +1,4 @@
-FROM ff32base
+FROM vbaruh/firefox32-base
 
 run wget http://repository.infonotary.com/install/linux/INotaryCodeSigning.key.asc
 run apt-key add INotaryCodeSigning.key.asc

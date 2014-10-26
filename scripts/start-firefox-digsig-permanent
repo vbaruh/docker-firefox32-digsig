@@ -7,7 +7,7 @@ mkdir -p $LOCALDIR
 
 exist=$(docker inspect $NAME 2>/dev/null || :)
 
-if [ "$exist" == "" ]; then
+if [ "$exist" == "" -o "$exist" == "[]" ]; then
    docker run -it \
       --name $NAME \
       -e DISPLAY=$DISPLAY \

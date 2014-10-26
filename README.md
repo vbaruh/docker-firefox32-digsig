@@ -56,7 +56,7 @@ Starting the container for the first time:
       -v /tmp/.X11-unix:/tmp/.X11-unix \
       -v /dev/bus/usb:/dev/bus/usb \
       --privileged \
-      -v $HOME/.my-digsig-firefox-home:/home/firefox
+      -v $HOME/.my-digsig-firefox-home:/home/firefox \
       vbaruh/firefox32-digsig
 
 Starting the existing container:

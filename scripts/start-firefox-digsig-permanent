@@ -1,0 +1,22 @@
+#!/bin/bash
+
+NAME=${FFDS_NAME:-my-firefox}
+LOCALDIR=${FFDS_HOME:-~/.firefox-digsig-homedir/}
+
+mkdir -p $LOCALDIR
+
+exist=$(docker inspect $NAME 2>/dev/null || :)
+
+if [ "$exist" == "" ]; then
+   docker run -it \
+      --name $NAME \
+      -e DISPLAY=$DISPLAY \
+      -v /tmp/.X11-unix:/tmp/.X11-unix \
+      --privileged \
+      -v /dev/bus/usb:/dev/bus/usb \
+      -v $LOCALDIR:/home/firefox \
+      vbaruh/firefox32-digsig
+else
+   docker start $NAME;
+fi
+

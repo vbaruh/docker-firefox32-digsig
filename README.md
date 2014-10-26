@@ -13,13 +13,14 @@ The image was created using the following resources:
 
 * [A very nice guide how to run GUI app in Docker](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
 * Several links to Infonotary wiki site guiding how to install card reader and smart card drivers (some of them are in Bulgarian).
-** http://wiki.infonotary.com/wiki/Installation_of_smart_card_reader_and_smart_card_drivers_in_Linux
-** http://wiki.infonotary.com/wiki/%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B8_%D0%B7%D0%B0_%D1%87%D0%B5%D1%82%D0%B5%D1%86_%D0%B8_%D1%81%D0%BC%D0%B0%D1%80%D1%82_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%B2_Linux
-** http://wiki.infonotary.com/wiki/%D0%94%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B8_%D0%B7%D0%B0_%D1%87%D0%B5%D1%82%D1%86%D0%B8
+  * http://wiki.infonotary.com/wiki/Installation_of_smart_card_reader_and_smart_card_drivers_in_Linux
+  * http://wiki.infonotary.com/wiki/%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B8_%D0%B7%D0%B0_%D1%87%D0%B5%D1%82%D0%B5%D1%86_%D0%B8_%D1%81%D0%BC%D0%B0%D1%80%D1%82_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%B2_Linux
+  * http://wiki.infonotary.com/wiki/%D0%94%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B8_%D0%B7%D0%B0_%D1%87%D0%B5%D1%82%D1%86%D0%B8
 
 This image is based on [vbaruh/firefox32-base](https://registry.hub.docker.com/u/vbaruh/firefox32-base/) which contains installed Firefox 32 and its dependencies.
 
 The installed drivers are as follow:
+
 * Card reader: ACR38
 * Smart card: bit4id
 

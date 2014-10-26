@@ -1,7 +1,7 @@
 #!/bin/bash
 
-NAME=${FFDS_NAME:-my-firefox}
-LOCALDIR=${FFDS_HOME:-~/.firefox-digsig-homedir/}
+NAME=${FFDS_NAME:-my-digsig-firefox}
+LOCALDIR=${FFDS_HOME:-$HOME/.my-digsig-firefox-home/}
 
 mkdir -p $LOCALDIR
 

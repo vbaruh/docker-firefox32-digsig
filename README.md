@@ -51,14 +51,29 @@ Using this approach it won't be necessary to enable the extension and restart th
 Starting the container for the first time:
 
     $ docker run -ti \
-      --name my-firefox \
+      --name my-digsig-firefox \
       -e DISPLAY=$DISPLAY \
       -v /tmp/.X11-unix:/tmp/.X11-unix \
       -v /dev/bus/usb:/dev/bus/usb \
       --privileged \
-      -v $HOME/.firefox32-digsig-home:/home/firefox
+      -v $HOME/.my-digsig-firefox-home:/home/firefox
       vbaruh/firefox32-digsig
 
 Starting the existing container:
 
-    $ docker start my-firefox
+    $ docker start my-digsig-firefox
+
+
+A bash script
+-------------
+
+In [the github repo](https://github.com/vbaruh/docker-firefox32-digsig) there's a script which does the above example. Check it out.
+
+By default this script will create a container with name "my-digsig-firefox" and will create a $HOME/.my-digsig-firefox-home/ directory as a home one for the container.
+
+If you want to change the name of the container change the value of FFDS_NAME environment variable.
+If you want to change the home directory set FFDS_HOME environment variable appropriately.
+
+    $ export FFDS_NAME=my-desired-firefox-container-name
+    $ export FFDS_HOME=/path/to/desired/home/dir
+    $ start-firefox-digsig-permanent
